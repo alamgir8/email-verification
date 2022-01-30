@@ -1,4 +1,4 @@
-This is simple setup for MERN project email verification with nodemailer and gmail default server.
+This is simple setup for MERN project email verification/forget-password with nodemailer and gmail default server.
 
 
 for setup configuration gmail, you need couple of thing to do: 
