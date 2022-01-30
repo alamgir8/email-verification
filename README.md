@@ -3,7 +3,7 @@ This is simple setup for MERN project email verification/forget-password with no
 
 for setup configuration gmail, you need couple of thing to do: 
 
-1. You need an email and password for using email verification and forget the password option. 
+You need an email and password for using email verification and forget the password option. 
 
 Use an email that you want to send messages to others when they register or request to forget the password.
 
