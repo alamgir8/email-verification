@@ -1,19 +1,21 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const helmet = require('helmet');
 
 const connectDB = require('./config/db');
 const userRoutes = require('./routes/userRoutes');
 
 connectDB();
 const app = express();
+
+// We are using this for the express-rate-limit middleware
+// See: https://github.com/nfriedly/express-rate-limit
+app.set('trust proxy', 1);
+
 app.use(express.json());
 app.use(cors());
-
-// Using this for the express-rate-limit middleware
-// See: https://github.com/nfriedly/express-rate-limit
-app.enable('trust proxy');
-
+app.use(cors());
 //root route
 app.get('/', (req, res) => {
   res.send('App works properly!');
