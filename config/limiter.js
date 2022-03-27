@@ -16,7 +16,7 @@ const emailVerificationLimit = rateLimit({
 });
 
 const passwordVerificationLimit = rateLimit({
-  windowMs: minutes * 60 * 100,
+  windowMs: minutes * 60 * 1000,
   max: 3, ///request will block after 3 request from a ip, you can change this
   standardHeaders: true,
   legacyHeaders: false,
