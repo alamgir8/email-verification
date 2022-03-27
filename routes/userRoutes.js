@@ -9,7 +9,7 @@ const {
 const {
   passwordVerificationLimit,
   emailVerificationLimit,
-} = require('../config/others');
+} = require('../config/limiter');
 
 //verify email
 router.post('/verify-email', emailVerificationLimit, verifyEmailAddress);
